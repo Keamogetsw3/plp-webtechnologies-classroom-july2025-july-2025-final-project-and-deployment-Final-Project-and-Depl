@@ -1,36 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Keamo's Catering offers fresh, tasty, and nutritious food for any occasion. Weddings, parties, conferences, and more.">
-    <title>Keamo's Catering</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Keamo's Catering offers fresh, tasty, and nutritious food for any occasion. Weddings, parties, conferences, and more.">
+  <title>Keamo's Catering</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Start of navigation bar-->
-        <nav>
-            <div class="logo">
-                <a href="#">Keamo's Catering</a>
-            </div>
-            <div class="menu-items">
-                <a href="#">Home</a>
-                <a href="#">Menu</a>
-                <a href="#">About Us</a>
-                <a href="#" class="btn">Book Us</a>
-            </div>
-        </nav>
-        <!-- End of navigation bar -->
-
-    <header class="hero">
-        <div class="overlay">
-            <h1>Keamo's Catering</h1>
-            <p>Fresh, tasty, and nutritious food for every occasion</p>
+  <div class="container">
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo"><a href="index.html">Keamo's Catering</a></div>
+        <div class="menu-items">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="bookings.html" class="btn">Book Us</a>
         </div>
+    </nav>
+    <!-- End of Navigation Bar -->
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="overlay">
+        <h1>Keamo's Catering</h1>
+        <p>Fresh, tasty, and nutritious food for every occasion</p>
+      </div>
     </header>
 
-        <script src="main.js"></script>
-    
+    <script src="main.js"></script>
+
+    <main>
+      <!-- About Section -->
+      <section id="about">
+        <h2>About Us</h2>
+        <p>
+          At Keamo's Catering, we bring your events to life with custom-tailored menus
+          and exceptional service. Whether it’s a wedding, party, or conference,
+          we’ve got you covered.
+        </p>
+      </section>
+
+      <!-- Menu Section -->
+      <section id="menu">
+        <h2>Our Menu</h2>
+        <p>We offer diverse catering options. Explore our menus below:</p>
+
+        <div class="menu-grid">
+          <div class="menu-item">
+            <h3>Meat Menu</h3>
+            <a href="meat.html">
+              <img src="images/meat.jpeg" alt="Assorted grilled meats served with sides">
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <h3>Finger Snacks</h3>
+            <a href="fingersnacks.html">
+              <img src="images/fingersnacks.jpeg" alt="Assorted finger snacks perfect for parties">
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <h3>Platters</h3>
+            <a href="platters.html">
+              <img src="images/platters.jpg" alt="Colorful party platters with variety">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Booking Section -->
+      <section id="bookings">
+        <h2>Book Us</h2>
+        <p>Fill in the form below to book us for your event:</p>
+        
+        <form action="" method="POST">
+          <fieldset>
+            <legend>Booking Details</legend>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+            <label for="event">Select Event:</label>
+            <select id="event" name="event" required>
+              <option value="">--Please choose an event--</option>
+              <option value="wedding">Wedding</option>
+              <option value="kidsparty">Kid's Party</option>
+              <option value="workshop">Workshop</option>
+              <option value="conference">Business Conference</option>
+            </select><br><br>
+
+            <label for="date">Event Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <label for="people">Number of People:</label>
+            <input type="number" id="people" name="people" min="5" placeholder="Minimum 5" required><br><br>
+
+            <label for="message">Additional Message or Requests:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter any special requests"></textarea><br><br>
+
+            <button type="submit">Book Now</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact-us">
+        <h2>Contact</h2>
+        <p>If you have any queries, please reach out to us:</p>
+        <p>Email: <a href="mailto:info@keamoscatering.co.za">info@keamoscatering.co.za</a></p>
+        <p>Phone: <a href="tel:+27793587567">+27 79 358 7567</a></p>
+        <p>Location: Johannesburg, South Africa</p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Keamo's Catering | All rights reserved.</p>
+      <nav>
+        <a href="#home">Home</a> | 
+        <a href="#menu">Menu</a> | 
+        <a href="#contact-us">Contact</a>
+      </nav>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

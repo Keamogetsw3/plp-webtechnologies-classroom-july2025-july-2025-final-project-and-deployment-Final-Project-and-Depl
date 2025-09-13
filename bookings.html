@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Us - Keamo's Catering</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo"><a href="index.html">Keamo's Catering</a></div>
+    <div class="menu-items">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="bookings.html" class="btn">Book Us</a>
+    </div>
+  </nav>
+
+  <section id="bookings">
+    <form id="bookingForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="event">Select Event:</label>
+      <select id="event" name="event" required>
+        <option value="">--Choose an event--</option>
+        <option value="wedding">Wedding</option>
+        <option value="kidsparty">Kid's Party</option>
+        <option value="workshop">Workshop</option>
+        <option value="conference">Business Conference</option>
+      </select>
+
+      <label for="date">Event Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="people">Number of People:</label>
+      <input type="number" id="people" name="people" min="5" placeholder="Minimum 5" required>
+
+      <button type="submit" class="btn">Book Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Keamo's Catering | All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
